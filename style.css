@@ -48,6 +48,12 @@ h1 > .stalinist-one-regular {
     font-size: 100%;
 
 }
+.menu-icon {
+    cursor: pointer;
+}
+.close-icon .material-symbols-sharp {
+    cursor: pointer;
+}
 
 .menu-list {
     font-family: "Poppins";
@@ -55,35 +61,59 @@ h1 > .stalinist-one-regular {
     font-style: normal;
     background-color: #b97e0041;
     position: absolute;
-    width: 25%;
-    top: 10%;
-    right: 10%;
+    width: 60%;
+    top: 1%;
+    right: 20%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: left;
+    flex-wrap: wrap;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
     border-radius: 5px;
 }
-.menu-box .material-symbols-sharp {
-    position: absolute;
-    top: 10%;
-    right: 10%;
+span.material-symbols-sharp.close-icon {
     cursor: pointer;
+    position: absolute;
+    font-size: x-large;
+    font-weight: 700;
+    color: #ffffff;
+    background: none;
+    top: 1%;
+    right: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
 }
-.menu-list a {
-    padding: 20px;
+div.menu-list a {
+    padding: 30px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-top: 20px;
     font-weight: 500;
     font-size: large;
     cursor: pointer;
     text-decoration: none;
     color: #ffffff;
 }
-.menu-list a:hover {
+div.menu-list a:hover {
     border-bottom: 5px;
     border-color: #ffffff;
     text-decoration: none;
     color: #dee946;
+    font-size: larger;
+    font-weight: 700;
 }
+div#menu-list.menu-list {
+    transition: top 0.5s;
+}
+.intro {
+    display: flex;
 
+}
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20%;
+}

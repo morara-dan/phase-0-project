@@ -20,30 +20,40 @@
 <body>
     <header id="header">
         <div id="logo" class="stalinist-one-regular">DAN .</div>
-        <div id="menu" class="menu">
-            <span class="material-symbols-sharp" style="font-size: 36px; font-weight: bold;">
+        <div class="menu">
+            <span class="material-symbols-sharp menu-icon" style="font-size: 36px; font-weight: bold;" onclick="openMenu()">
                 menu
             </span>
-            <div class="menu-box">
-                <span class="material-symbols-sharp">
+            <div id="menu-list" class="menu-list">
+                <span  class="material-symbols-sharp close-icon" onclick="closeMenu()">
                     close
                 </span>
-                <div class="menu-list">
-                    <a href="#">Home</a>
-                    <a href="#">About Me</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Contact Me</a>
-                </div>
-            </div>
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Skills</a>
+                <a href="#">Contact Me</a>
+            </div>       
         </div>
     </header>
     <div class="orbitron-one intro">
-        <h1>Hi, I'm<span class="stalinist-one-regular">Dancan</span>.</h1>
-        <h2>A front-end developer</h2>
+        <h1>Hi, I'm<span class="stalinist-one-regular">Dancan <br></span>A front-end developer.</h1>
+        <img src="./dan1.jpg">
+    </div>
+    <div class="dan-pic">
+        
     </div>
 
 
 
+    <script>
+        let menu = document.getElementById("menu-list");
+        function openMenu(){
+            menu.style.top = "1%";
+        }
+        function closeMenu(){
+            menu.style.top ="-100vh";
+        }
+    </script>
 </body>
 </html>
