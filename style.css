@@ -5,13 +5,41 @@
     box-sizing: border-box;
 }
 
-/* Set the body background */
-body {
+html, body {
+    height: 100%;
+    background: #080808;
+    color: #fff;
+}
+
+div#header {
     background-image: url('bg2.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #ffffff;
+    height: 100vh;
+}
+
+#logo > span:nth-child(1) {
+    color: #ffee00;
+}
+
+#header > div.orbitron-one.container {
+    padding: 0;
+    margin: 100px;
+    padding-top: 150px;
+}
+
+#header > div.orbitron-one.container > img.dan-pic {
+    border: solid;
+    border-color: #e7c248bd;
+    border-width: 3px;
+    border-radius: 50%;
+    width: 500px;
+    height: 525px;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    transform: rotate(-2deg);
 }
 
 .stalinist-one-regular {
@@ -35,12 +63,19 @@ body {
 }
 .orbitron-one {
     font-family: "Orbitron";
-    width: 60%;
+    width: 80%;
     margin-left: 100px;
     font-size: xx-large;
     font-weight: bold;
     padding: 10%;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
 h1 > .stalinist-one-regular {
     font-weight: 900;
     font-size: xx-large;
@@ -106,14 +141,8 @@ div.menu-list a:hover {
 div#menu-list.menu-list {
     transition: top 0.5s;
 }
-.intro {
-    display: flex;
-
-}
-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    position: absolute;
-    right: 20%;
+h3{
+    padding-left: 10px;
+    padding-right: 200px;
+    font-weight: 400;
 }
